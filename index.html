@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -10,35 +11,151 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+@font-face {
+    font-family: 'karlabold';
+    src: url('fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('fonts/karla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlabolditalic';
+    src: url('fonts/karla-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/karla-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('fonts/karla-italic-webfont.woff2') format('woff2'),
+         url('fonts/karla-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('fonts/karla-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body {
+      margin: 80px;
+      background-color:  hsl(218, 22%, 67%);
+      font-family: 'karlaregular';
+      font-size: 16px;
+}
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: [col] 720px [col] 720px ;
+    background-color: #2196F3;
+
+    width: 1440px;
+}
+  .header {
+        grid-column: col / span 2 ;
+        grid-row: 1;
+        background-color: white;
+        padding: 30px;
+    }
+    .content {
+        color: white;
+        grid-column: 1 ;
+        grid-row: 2 ;
+        padding: 30px;
+        background-color: hsl(179, 62%, 43%);
+    }
+    .sidebar {
+      color: white;
+        grid-column: 2;
+        grid-row: 2;
+        padding: 30px;
+        background-color: hsl(187, 57%, 47%);
+    }
+
+/* 
+*  {
+  font-family: karlaregular;
+} */
+    .Cyan {
+      background-color: hsl(179, 62%, 43%);
+    }
+
+    .Cyanopia {
+      background-color: hsl(187, 57%, 47%);
+    }
+    .BrightYellow {
+      color: hsl(71, 73%, 54%);
+    }
+    .GrayishBlue {
+      color: hsl(218, 22%, 67%);
+    }
+    .PrimaryBtn
+    {
+      border-radius: 8px;
+      padding: 10px 80px;
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      font-family: 'karlaregular';
+    }
+
+    h1{
+      color: hsl(179, 62%, 43%);
+    }
+
   </style>
 </head>
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+ <div class ="grid-container">
+      <div class="header">
+        <h1 >Join our community</h1>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+        <h2 class ="BrightYellow" >30-day, hassle-free money back guarantee</h2>
+<div class="GrayishBlue">
+          <p>Gain access to our full library of tutorials along with expert code reviews.</p> 
+        <p>Perfect for any developers who are serious about honing their skills.</p>
+</div>
 
-  Monthly Subscription
+    </div>
 
-  &dollar;29 per month
+  <div class="content">
+      <h3>Monthly Subscription</h3>
 
-  Full access for less than &dollar;1 a day
+    <div>&dollar;29 per month</div>
 
-  Sign Up
+    <div >Full access for less than &dollar;1 a day</div>
 
-  Why Us
+    <button class="PrimaryBtn">Sign Up</button>
+  </div>
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+  <div class="sidebar">
+      <h3>Why Us</h3>
+
+    <p>Tutorials by industry experts </p>
+    <p>Peer &amp; expert code review</p>
+    <p>Coding exercises</p>
+    <p>Access to our GitHub repos</p>
+    <p>Community forum</p>
+    <p>Flashcard decks</p>
+    <p>New videos every week</p>
+  </div>
+
+ </div>
+
   
   <footer>
     <p class="attribution">
