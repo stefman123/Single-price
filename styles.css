@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'karlabold';
+    src: url('fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('fonts/karla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlabolditalic';
+    src: url('fonts/karla-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/karla-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('fonts/karla-italic-webfont.woff2') format('woff2'),
+         url('fonts/karla-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('fonts/karla-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body {
+      margin: 80px;
+      background-color:  hsl(218, 22%, 67%);
+      font-family: 'karlaregular';
+      font-size: 16px;
+}
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: [col] 720px [col] 720px ;
+    background-color: #2196F3;
+
+    width: 1440px;
+}
+  .header {
+        grid-column: col / span 2 ;
+        grid-row: 1;
+        background-color: white;
+        padding: 30px;
+    }
+    .content {
+        color: white;
+        grid-column: 1 ;
+        grid-row: 2 ;
+        padding: 30px;
+        background-color: hsl(179, 62%, 43%);
+    }
+    .sidebar {
+      color: white;
+        grid-column: 2;
+        grid-row: 2;
+        padding: 30px;
+        background-color: hsl(187, 57%, 47%);
+    }
+
+    .Cyan {
+      background-color: hsl(179, 62%, 43%);
+    }
+
+    .Cyanopia {
+      background-color: hsl(187, 57%, 47%);
+    }
+    .BrightYellow {
+      color: hsl(71, 73%, 54%);
+    }
+    .GrayishBlue {
+      color: hsl(218, 22%, 67%);
+    }
+    .PrimaryBtn
+    {
+      border-radius: 8px;
+      padding: 10px 80px;
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      font-family: 'karlaregular';
+    }
+
+    h1{
+      color: hsl(179, 62%, 43%);
+    }
